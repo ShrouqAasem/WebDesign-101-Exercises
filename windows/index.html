@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete window</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            padding: 20px;
+            margin: 10px;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .window {
+            width: 250px;
+            height: 350px;
+            border: 1px solid chartreuse;
+            border-radius: 12px;
+            background-color: #ffffff;  
+            padding: 14px;  
+        }
+        .trash-container {
+            width: 210px;
+            height: 120px;
+            border: 1px solid rgb(120, 222, 18);
+            border-radius: 12px;
+            padding: 14px;
+            margin: 2px 5px 5px 5px;
+            background-color: #f2b8c5;
+            text-align: center;
+            justify-content: center;
+        }
+
+        /* .trash-icon {
+            width: 100px;
+            height: 80px;
+            border: 1px solid rgb(120, 222, 18);
+            background-color: #f24f70;
+            text-align: center;
+            justify-content: center;
+        } */
+
+        .title {
+            font-size:large;
+            font-weight: bold;
+            color: #343232;
+        }
+
+        .question {
+            font-size: 14px;
+            color: #343232;
+        }
+
+        .Delete {
+            margin: 5px 5px 2px 5px;
+            width: 220px;
+            height: 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f24f70;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        .Cancel {
+            margin: 2px 5px 5px 5px;
+            width: 220px;
+            height: 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: #D3D3D3;
+            color: #343232;
+            font-size: 12px;
+        }
+
+        /* account form style */
+
+        .form {
+            margin-top: 10px ;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        .email {
+            margin: 5px 10px 5px 10px;
+            width: 220px;
+            height: 25px;
+            padding: 5px;
+            border: none;
+            border-radius: 8px;
+            background-color: #d3d3d3; 
+            color: #494747; 
+            font-size: 10px;    
+        }
+
+        .pwd {
+            margin: 5px 10px 2px 10px;
+            width: 220px;
+            height: 25px;
+            padding: 5px;
+            border: none;
+            border-radius: 8px;
+            background-color: #D3D3D3;
+            color: #494747;
+            font-size: 10px;
+        }
+        .forget {
+            float: right;
+            font-size: 9px;
+            font-weight: bold;
+            color: #494747;
+        }
+        .login {
+            margin-left: 10px;
+            width: 220px;
+            height: 40px;
+            padding: 5px;
+            border: none;
+            border-radius: 12px;
+            background-color: blue;
+            color: #ffffff;
+            font-size: 12px;
+
+        }
+        .logWith {
+            font-size: 11px;
+            text-align: center;
+            justify-content: center;
+        }
+        .google {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            width: 220px;
+            height: 35px;
+            padding: 5px;
+            border: 1px solid #6c6b6b;
+            border-radius: 25px;
+            background-color:#ffffff;
+            color: #323232;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .apple {
+            margin-left: 10px;
+            margin-top: 5px;
+            width: 220px;
+            height: 35px;
+            padding: 5px;
+            border: none;
+            border-radius: 25px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <div class="trash-container">
+                <i class="fa-solid fa-circle-trash fa-2xl" style="color: #ca4444;"></i>
+                <!-- <div class="trash-icon">
+                    <br> 
+                    
+                </div> -->
+            </div>
+            <p class="title"> <strong>Delete Account?</strong> </p>
+            <p class="question">Are you sure you want to delete <b>your account?</b> </p>
+            <button class="Delete">Delete</button>
+            <button class="Cancel">Cancel</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="window">
+            <p class="title form">Welcome Back!</p>
+            <form action="#">
+                <input type="email" id="email" class="email" value="Email">
+                <br>
+                <input type="password" id="pwd" class="pwd">
+                <br>
+                <p class="forget">Forget Password?</p>
+                <br>
+                <input type="submit" id="login" class="login" value="Log In">
+                <p class="logWith"> Or Log In With</p>
+            </form>
+            <button class="google">
+                <i class="fa-brands fa-google fa-lg" 
+                    style="color: #51221f;">
+                </i>
+                &nbsp;&nbsp;
+                Log In with Google
+            </button>
+            <br>
+            <button class="apple">
+                <i class="fa-brands fa-apple fa-lg" 
+                    style="color: #ffffff;">
+                </i>
+                &nbsp;&nbsp;
+                Log In with Apple
+            </button>
+        </div>
+    </div>
+   
+
+</body>
+</html>
